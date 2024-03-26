@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/tic_tac_toe/",
+  homepage: "https://jaganparigi.github.io/tic_tac_toe/",
 });
