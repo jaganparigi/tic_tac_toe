@@ -81,6 +81,11 @@ body {
   margin-bottom: 10px;
 }
 
+.reset {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .game {
   display: flex;
   flex-direction: row;

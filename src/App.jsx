@@ -39,6 +39,8 @@ export default function Board() {
   let status;
   if (winner) {
     status = "Winner: " + winner;
+  } else if (squares.every((square) => square !== null)) {
+    status = "It's a tie!";
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
@@ -63,7 +65,9 @@ export default function Board() {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
-      <button onClick={handleReset}>Reset</button>
+      <button className="reset" onClick={handleReset}>
+        Reset
+      </button>
     </>
   );
 }
